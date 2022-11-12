@@ -1,0 +1,8 @@
+.box1 {
+  $color: #111;
+  background: $color;
+}
+
+.box2 {
+  background: $color; // Error
+}
