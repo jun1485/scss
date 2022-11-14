@@ -1,0 +1,6 @@
+$color-primary: red;
+
+.box {
+  $color-primary: blue !default;
+  background: $color-primary; // red
+}
