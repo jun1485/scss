@@ -1,2 +1,9 @@
 width: 50% - 20px;  // 단위 모순 에러(Incompatible units error)
 width: calc(50% - 20px);  // 연산 가능
+
+div {
+  $x: 100px;
+  width: $x / 2;
+  height: (100px / 2);
+  font-size: 10px + 12px / 3;
+}
