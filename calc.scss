@@ -1,0 +1,2 @@
+width: 50% - 20px;  // 단위 모순 에러(Incompatible units error)
+width: calc(50% - 20px);  // 연산 가능
