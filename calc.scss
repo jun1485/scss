@@ -7,3 +7,8 @@ div {
   height: (100px / 2);
   font-size: 10px + 12px / 3;
 }
+
+div::after {
+  content: "Hello " + World;  // === "Hello World"   // 문자 연산은 왼쪽 피연산자를 기준으로 함.
+  flex-flow: row + "-reverse" + " " + wrap  // === row -reverse wrap
+}
