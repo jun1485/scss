@@ -4,3 +4,16 @@
   font-family: sans-serif;
   color: orange;
 }
+
+
+h1 {
+  @include large-text
+}
+
+// compile to ->
+// h1 {
+//   font-size: 22px;
+//   font-weight: bold;
+//   font-family: sans-serif;
+//   color: orange;
+// }
