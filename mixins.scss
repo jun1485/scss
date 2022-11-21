@@ -17,3 +17,19 @@ h1 {
 //   font-family: sans-serif;
 //   color: orange;
 // }
+
+
+@mixin dash-line($width, $color) {
+  border: $width dashed $color;
+}
+
+.box1 { @include dash-line(1px, red); }
+.box2 { @include dash-line(4px, blue); }
+
+// compile to -> 
+// .box1 {
+//   border: 1px dashed red;
+// }
+// .box2 {
+//   border: 4px dashed blue;
+// }
