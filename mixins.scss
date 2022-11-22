@@ -33,3 +33,30 @@ h1 {
 // .box2 {
 //   border: 4px dashed blue;
 // }
+
+@mixin position(
+  $p: absolute,
+  $t: null,
+  $b: null,
+  $l: null,
+  $r: null
+) {
+  position: $p;
+  top: $t;
+  bottom: $b;
+  left: $l;
+  right: $r;
+}
+
+.absolute {
+  // 키워드 인수로 설정할 값만 전달
+  @include position($b: 10px, $r: 20px);
+}
+.fixed {
+  // 인수가 많아짐에 따라 가독성을 확보하기 위해 줄바꿈
+  @include position(
+    fixed,
+    $t: 30px,
+    $r: 40px
+  );
+}
