@@ -60,3 +60,21 @@ h1 {
     $r: 40px
   );
 }
+
+// 인수를 순서대로 하나씩 전달 받다가, 3번째 매개변수($bg-values)는 인수의 개수에 상관없이 받음
+@mixin bg($width, $height, $bg-values...) {
+  width: $width;
+  height: $height;
+  background: $bg-values;
+}
+
+div {
+  // 위의 Mixin(bg) 설정에 맞게 인수를 순서대로 전달하다가 3번째 이후부터는 개수에 상관없이 전달
+  @include bg(
+    100px,
+    200px,
+    url("/images/a.png") no-repeat 10px 20px,
+    url("/images/b.png") no-repeat,
+    url("/images/c.png")
+  );
+}
