@@ -32,3 +32,12 @@ $fruits: (apple, orange, banana, mango);
   }
 }
 
+$apple: (apple, korea);
+$orange: (orange, china);
+$banana: (banana, japan);
+
+@each $fruit, $country in $apple, $orange, $banana {
+  .box-#{$fruit} {
+    background: url("/images/#{$country}.png");
+  }
+}
