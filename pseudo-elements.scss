@@ -1,0 +1,9 @@
+// 선택한 요소의 앞이나 뒤에 컨텐츠를 삽입
+
+p::before {
+  content: "* ";
+}
+
+p::after {
+  content: " .";
+}
