@@ -1,0 +1,7 @@
+// 선택자를 부모-자식 관계로 중첩하여 작성
+nav {
+  ul {
+    margin: 0;
+    li { list-style: none; }
+  }
+}
