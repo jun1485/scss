@@ -7,3 +7,10 @@ $w: 200px;
   margin-left: $w;
   background: $color-primary url($url-images + "bg.jpg");
 }
+
+
+// Variables : 스타일시트 전체에 걸쳐 ㅐ사용할 수 있는 값을 저장.
+$primary-color: #333;
+body {
+  color: $primary-color;
+}
