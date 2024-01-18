@@ -1,0 +1,9 @@
+// 상속: 공통 스타일 규칙을 공유
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  @extend %flex-center;
+}
